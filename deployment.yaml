@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: wisecow-container
-          image: mycontainerregistrywc.azurecr.io/wisecow:latest
+          image: myContainerRegistrywc/wisecow:latest
           ports:
             - containerPort: 4499
