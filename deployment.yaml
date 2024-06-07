@@ -15,7 +15,7 @@ spec:
       imagePullSecrets:
       - name: azure-registry-secret
       containers:
-      - name: wisecow
+      - name: mycontainerregistrywc
         image: mycontainerregistrywc.azurecr.io/wisecow:latest
         ports:
         - containerPort: 80
