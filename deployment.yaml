@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wisecow-deployment
+  name: deployment
 spec:
   replicas: 3
   selector:
@@ -12,6 +12,8 @@ spec:
       labels:
         app: wisecow
     spec:
+      imagePullSecrets:
+      - name: azure-registry-secret
       containers:
       - name: wisecow
         image: mycontainerregistrywc.azurecr.io/wisecow:latest
